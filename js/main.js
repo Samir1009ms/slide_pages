@@ -247,91 +247,19 @@ function slick4() {
         slide5.style.transform = `translateX(${(index5 - list) * 110}%)`
 
     })
-    
+
     rightBtn4.addEventListener("click", () => {
 
     })
 
-    if (list === 0) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("1")) {
-                list.classList.add("slic")
-            }
-        })
-        // console.log("sssss", list)
-    } else if (list === 1) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("2")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 2) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("3")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 3) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("4")) {
-                list.classList.add("slic")
-            }
-        })
-    } else if (list === 4) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("5")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 5) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("6")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 6) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("7")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 7) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("8")) {
-                list.classList.add("slic")
-            }
-        })
-    }
-    else if (list === 8) {
-        single4.forEach(list => {
-            list.classList.remove("slic")
-            if (list.textContent.includes("9")) {
-                list.classList.add("slic")
-            }
-        })
-    }
+   
+hover()
 }
 slick4()
 leftBtn4.addEventListener("click", slick4)
 
-
-
-
 function slick5() {
-
+    
     if (list === length5 - 1) {
         list = 0
         // console.log("sass", say)
@@ -345,8 +273,18 @@ function slick5() {
 
         slide5.style.transform = `translateX(${(index5 - list) * 110}%)`
     })
-    console.log(single4.length)
+    // console.log(single4.length)
+    // console.log("ssaas", list)
+    hover()
 
+    
+}
+
+rightBtn4.addEventListener("click", slick5)
+
+
+
+function hover(){
     if (list === 0) {
         single4.forEach(list => {
             list.classList.remove("slic")
@@ -418,12 +356,5 @@ function slick5() {
             }
         })
     }
-
-    console.log("ssaas",list)
     
-
 }
-
-
-rightBtn4.addEventListener("click", slick5)
-
